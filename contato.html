@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contato - Clean Esmalteria</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo-rosa.png" class="imagemlogo-rosa" alt="Logo da Clean Esmalteria"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contatos</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+        <main>
+            <form>
+                <label for="nomesobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required >
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuname@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) 9XXXX-XXXX">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="68" rows="10" id="mensagem" class="input-padrao" required placeholder="seu recado"></textarea>
+
+                <fieldset>
+                    <legend>Como prefere nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                </fieldset>
+
+				<fieldset>
+					<legend>Qual turno prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+                
+                <label><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar respostas" class="enviar">
+            </form>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Seg</td>
+						<td>08h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Qua</td>
+						<td>08h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Sex</td>
+						<td>08h ~ 20h</td>
+					</tr>
+				</tbody>
+			</table>
+
+        </main>
+
+        <footer>
+			<img src="logo-branco.png" class="imagemlogo-branco" alt="Logo da Clean Esmalteria">
+			<p class="copyright">&copy; Copyright Clean Esmalteria - 2019</p>
+		</footer>
+
+	</body>
+</html>
